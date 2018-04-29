@@ -229,4 +229,37 @@ ul {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.best__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 85px; }
+
+.best__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px; }
+
+.best__elem {
+  width: 300px;
+  text-align: center; }
+
+.elem__img {
+  height: 100px; }
+
+.elem__head {
+  font-family: 'Lifehack';
+  font-weight: 400;
+  font-size: 24px; }

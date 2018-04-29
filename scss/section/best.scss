@@ -6,4 +6,32 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.best__content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 85px;
+}
+
+.best__list {
+	display: flex;
+	padding-top: 55px;
+}
+.best__elem {
+	width: 300px;
+	text-align: center;
+}
+
+.elem__img {
+	height: 100px;
+}
+
+.elem__head {
+	font-family: 'Lifehack';
+	font-weight: 400;
+	font-size: 24px;
 }
