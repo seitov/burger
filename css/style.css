@@ -129,7 +129,7 @@ ul {
   padding-top: 80px; }
 
 .top {
-  background: url("../../img/hero/hero-background.jpg");
+  background: url("../img/hero/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -219,7 +219,7 @@ ul {
   line-height: 1; }
 
 .best {
-  background: url("../../img/best/best-background.jpg");
+  background: url("../img/best/best-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -332,38 +332,38 @@ ul {
     background-color: #232527; }
 
 .reviews__img-one {
-  background-image: url("../../img/reviews/1.jpg");
+  background-image: url("../img/reviews/1.jpg");
   background-size: 100%;
   background-position-y: -30px; }
 
 .reviews__img-two {
-  background-image: url("../../img/reviews/2.jpg");
+  background-image: url("../img/reviews/2.jpg");
   background-size: 200%;
   background-position-y: -50px;
   background-position-x: -200px; }
 
 .reviews__img-three {
-  background-image: url("../../img/reviews/3.jpg");
+  background-image: url("../img/reviews/3.jpg");
   background-size: 250%;
   background-position-y: -20px; }
 
 .reviews__img-four {
-  background-image: url("../../img/reviews/4.jpg");
+  background-image: url("../img/reviews/4.jpg");
   background-size: 250%;
   background-position-x: -500px;
   background-position-y: -200px; }
 
 .reviews__img-five {
-  background-image: url("../../img/reviews/5.jpg");
+  background-image: url("../img/reviews/5.jpg");
   background-position-x: 0px;
   background-size: 190%; }
 
 .reviews__img-six {
-  background-image: url("../../img/reviews/6.jpg"); }
+  background-image: url("../img/reviews/6.jpg"); }
 
 .reviews__img-seven {
-  background-image: url("../../img/reviews/7.jpg"); }
+  background-image: url("../img/reviews/7.jpg"); }
 
 .reviews__img-eight {
-  background-image: url("../../img/reviews/8.jpg");
+  background-image: url("../img/reviews/8.jpg");
   background-position-x: -90px; }
