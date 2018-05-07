@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  position: relative;
   font-size: 16px;
   font-family: "Ubuntu", "Arial", "Helvetica", "sans-serif";
   line-height: 1.42;
@@ -29,6 +30,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+// img {
+//   max-width: 100%;
+// }
 
 .visuallyhidden {
     position: absolute;
