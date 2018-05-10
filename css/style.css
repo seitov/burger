@@ -597,3 +597,84 @@ ul {
 
 .form__reset-text {
   padding: 0.5625rem 0.9375rem; }
+
+.contact__section {
+  background-image: url("../img/contacts/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.footer {
+  background-image: url("../img/contacts/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 3.75rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0; }
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .footer__address {
+    color: #fff;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%; }
+  .footer__address-text {
+    margin-bottom: 0.3125rem; }
+  .footer__phone {
+    color: #e25028;
+    font-weight: 700; }
+  .footer__social {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%; }
+
+.social__list li {
+  display: inline-block;
+  margin-right: 1.25rem; }
+  .social__list li:last-child {
+    margin-right: 0; }
+
+.icon {
+  fill: #585858;
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.25rem;
+  width: 1.25rem;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  .icon:hover {
+    fill: #fff; }
