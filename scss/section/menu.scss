@@ -23,6 +23,7 @@
 .menu__accardeon {
 	display: flex;
 	height: 100%;
+	width: 100%;
 }
 
 .menu__accardeon-element {
@@ -33,13 +34,14 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		.trigger__title {
 		background-color: rgba( 47, 50, 52, 0.6 );
-		height: 100%;
-		width: 100%;
-		overflow: hidden;	
+		height: 100%;	
+		position: relative;
+		.trigger__title {
+			position: absolute;
+			transform: rotate(-90deg);
+			height: rem(80px);
 		}
-		
 	}
 	.menu__accardeon-content {
 		display: none;
@@ -49,6 +51,8 @@
 
 .menu__accardeon-element-active {
 	.menu__accardeon-content {
+		position: relative;
+		width: calc(100% - 80px);
 		display: flex;
 		padding: rem(60px) rem(35px);
 		font-size: rem(14px);
