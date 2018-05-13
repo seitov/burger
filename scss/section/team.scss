@@ -15,13 +15,22 @@
 	background: rgba(#2f3234, .93);
 }
 
+.team__wrap {
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
 .team__head {
 	color: $yellow;
 	margin-bottom: rem(25px);
+	padding: 0;
 }
 
+
+
 .accordeon__element {
-	margin-bottom: rem(15px);
+	margin-bottom: rem(30px);
 }
 
 .accordeon__element-active {
