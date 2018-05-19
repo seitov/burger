@@ -439,11 +439,26 @@ ul {
     height: 100%;
     position: relative; }
     .menu__accardeon-element .menu__accardeon-trigger .trigger__title {
+      font-family: 'Gagalin';
+      font-size: 2.5rem;
+      color: #fff;
       position: absolute;
       -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
-      height: 5rem; }
+      top: 95%;
+      left: 50%;
+      z-index: 1;
+      line-height: 0;
+      -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+      transform-origin: left top;
+      white-space: nowrap;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+    .menu__accardeon-element .menu__accardeon-trigger:hover .trigger__title {
+      color: #f8b43a; }
   .menu__accardeon-element .menu__accardeon-content {
     display: none;
     background-color: rgba(47, 50, 52, 0.929); }

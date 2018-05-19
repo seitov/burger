@@ -38,9 +38,23 @@
 		height: 100%;	
 		position: relative;
 		.trigger__title {
+			font-family: 'Gagalin';
+			font-size: rem(40px);
+			color: #fff;
 			position: absolute;
 			transform: rotate(-90deg);
-			height: rem(80px);
+			top: 95%;
+			left: 50%;
+			z-index: 1;
+			line-height: 0;
+			transform-origin: left top;
+			white-space: nowrap;
+			transition: .4s;
+		}
+		&:hover {
+			.trigger__title {
+				color: $yellow;
+			}
 		}
 	}
 	.menu__accardeon-content {
