@@ -11,6 +11,10 @@
 
 .form {
 	display: flex;
+	@include tablets {
+		flex-direction: column;
+		padding: 0 rem(100px);
+}
 }
 
 .form__section-head {
@@ -23,6 +27,9 @@
 	width: 50%;
 	flex-direction: column;
 	margin-right: rem(20px);
+	@include tablets {
+		width: 100%;
+}
 
 	&:last-child {
 		margin-right: 0;

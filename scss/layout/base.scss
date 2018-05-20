@@ -1,8 +1,22 @@
+html {
+  font-size: 16px;
+  @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
+    font-size: 15px;
+  }
+  @include tablets {
+    font-size: 14px;
+  }
+  @include phones {
+    font-size: 13px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-size: 16px;
   font-family: "Ubuntu", "Arial", "Helvetica", "sans-serif";
   font-weight: 300;
   line-height: 1.42;
@@ -20,18 +34,6 @@ body {
 body,
 html {
   height: 100%;
-  @include desktop {
-    font-size: 16px;
-  }
-  @include laptop {
-    font-size: 15px;
-  }
-  @include tablets {
-    font-size: 14px;
-  }
-  @include phones {
-    font-size: 13px;
-  }
 }
 
 a {
@@ -44,9 +46,9 @@ ul {
   list-style: none;
 }
 
-// img {
-//   max-width: 100%;
-// }
+img {
+  max-width: 100%;
+}
 
 .visuallyhidden {
     position: absolute;

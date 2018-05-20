@@ -11,6 +11,10 @@
         width: 25%;
         height: 50%;
         position: relative;
+        @include tablets {
+            width: 50%;
+            height: 25%;
+        }
         &:hover {
             .reviews {
                 &__img {
@@ -18,6 +22,12 @@
                 }
                 &__info {
                     display: block;
+                    @include tablets {
+                        padding: 0;
+                        justify-content: center;
+                        text-align: center;
+                        padding: rem(10px);
+                    }
                 }
             }
         }
@@ -45,6 +55,9 @@
         font-weight: 400;
         font-size: rem(14px);
         margin-bottom: 29px;
+        @include tablets {
+            margin: 0;
+        }
     }
     &__text {
         font-weight: 300;
@@ -52,6 +65,9 @@
         margin-bottom: 16px;
         max-height: 150px;
         overflow: hidden;
+        @include tablets {
+            margin-bottom: rem(5px);
+        }
     }
     &__btn {
         display: inline-block;
