@@ -64,6 +64,11 @@
 }
 
 .menu__accardeon-element-active {
+	.menu__accardeon-trigger {
+		.trigger__title {
+			color: $yellow;
+		}
+	}
 	.menu__accardeon-content {
 		position: relative;
 		width: calc(100% - 80px);
