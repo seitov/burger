@@ -49,7 +49,7 @@
 	font-weight: 400;
 	margin: 0;
 	padding-top: rem(80px);
-	@include tablets {
-		font-size: rem(56px);
+	@include phones {
+		font-size: rem(50px);
 }
 }

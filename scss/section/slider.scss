@@ -12,7 +12,8 @@
 }
 
 .slider {
-    height: 50%;
+    height: 100%;
+    padding: rem(90px) 0;
     position: relative;
     @include tablets {
         height: 100%;
@@ -39,6 +40,13 @@
         justify-content: center;
         height: 100%;
         width: 50%;
+        @include tablets {
+            width: 70%;
+            height: 50%;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
     }
     &__img {
         height: 100%;
@@ -53,10 +61,7 @@
     }
     &__info {
         display: flex;
-        align-items: flex-end;
-        .slider-order__link {
-            height: 100%;
-        }
+        align-items: baseline;
     }
     &__prise {
         font-family: 'Gagalin';
@@ -79,6 +84,9 @@
       &-left {
         left: -5%;
         right: auto;
+        @include tablets {
+            left: 5%;
+        }
         img {
           transform: rotate(90deg);
           position: absolute;
@@ -87,6 +95,9 @@
       &-right {
         right: -5%;
         left: auto;
+        @include tablets {
+            right: 5%;
+        }
         img {
           transform: rotate(-90deg);
           position: absolute;
@@ -100,7 +111,11 @@
     position: relative;
     height: rem(90px);
     width: rem(90px);
-    left: 6%;
+    left: 10%;
+    @include tablets {
+        left: -30%;
+        top: 4%;
+    }
     &:hover {
         .composition__drop {
             top: 0;
@@ -150,7 +165,7 @@
 
 .kkal {
     position: absolute;
-    left: 6%;
+    left: 11%;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -160,6 +175,10 @@
     letter-spacing: rem(1px);
     font-weight: 400;
     text-align: center;
+    @include tablets {
+        left: 80%;
+        bottom: 87%;
+    }
     &__img {
         background-position: center;
         background-repeat: no-repeat;

@@ -22,12 +22,7 @@
                 }
                 &__info {
                     display: block;
-                    @include tablets {
-                        padding: 0;
-                        justify-content: center;
-                        text-align: center;
-                        padding: rem(10px);
-                    }
+                    
                 }
             }
         }
@@ -49,6 +44,13 @@
         padding: 45px 20px;
         color: #fff;
         display: none;
+        height: 100%;
+        width: 100%;
+        @include tablets {
+            justify-content: center;
+            text-align: center;
+            padding: 35px 50px;
+        }
     }
     &__name {
         font-family: 'Gagalin';
@@ -56,7 +58,7 @@
         font-size: rem(14px);
         margin-bottom: 29px;
         @include tablets {
-            margin: 0;
+            margin-bottom: rem(20px);
         }
     }
     &__text {
@@ -66,7 +68,7 @@
         max-height: 150px;
         overflow: hidden;
         @include tablets {
-            margin-bottom: rem(5px);
+            margin-bottom: rem(20px);
         }
     }
     &__btn {

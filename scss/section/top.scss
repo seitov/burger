@@ -118,14 +118,18 @@
 	display: flex;
 	flex-basis: 50%;
 	width: 50%;
+	@include tablets {
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 .top__description {
 	flex-direction: column;
 	justify-content: center;
 	@include tablets {
+		justify-content: flex-start;
 		text-align: center;
-		width: 100%;
 	}
 }
 
