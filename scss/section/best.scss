@@ -15,25 +15,61 @@
 	flex-wrap: wrap;
 	align-items: center;
 	padding-bottom: 85px;
+	@include phones {
+		padding: 0;
+	}
+}
+
+.best__head {
+	@include phones {
+		margin-bottom: rem(35px);
+	}
 }
 
 .best__list {
 	display: flex;
+	height: 100%;
 	padding-top: 55px;
+	@include phones {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+	}
 }
 .best__elem {
 	width: calc(100% / 3);
 	text-align: center;
+	@include phones {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
 }
 
 .elem__img {
 	height: 100px;
+	@include phones {
+		width: 25%;
+		margin-right: rem(20px);
+	}
+}
+
+.elem__info {
+	display: flex;
+	flex-direction: column;
+	@include phones {
+		width: 75%;
+		text-align: left;
+	}
 }
 
 .elem__head {
 	font-family: 'Lifehack';
 	font-weight: 400;
 	font-size: 24px;
+	@include phones {
+		margin: 0 0 rem(20px) 0;
+	}
 }
 
 .elem__text {

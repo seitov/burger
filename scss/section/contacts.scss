@@ -16,8 +16,15 @@
     top: 100%;
     left: 0;
     right: 0;
+    @include phones {
+        height: rem(138px);
+    }
     &__container {
         flex-direction: row;
+        @include phones {
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__address {
         color: #fff;
@@ -46,6 +53,9 @@
         align-items: flex-end;
         width: 50%;
         height: 100%;
+        @include phones {
+            align-items: center;
+        }
     }
 }
 

@@ -73,36 +73,35 @@
             font-size: rem(70px);
         }
     }
-
     &__arrow {
-      position: absolute;
-      height: rem(14px);
-      width: rem(30px);
-      top: 50%;
-      transform: translate(0, -50);
-      z-index: 100;
-      &-left {
-        left: -5%;
-        right: auto;
-        @include tablets {
-            left: 5%;
+        position: absolute;
+        height: rem(14px);
+        width: rem(30px);
+        top: 50%;
+        transform: translate(0, -50);
+        z-index: 100;
+        &-left {
+            left: -5%;
+            right: auto;
+            @include tablets {
+                left: 5%;
+            }
+            img {
+                transform: rotate(90deg);
+                position: absolute;
+            }
         }
-        img {
-          transform: rotate(90deg);
-          position: absolute;
+        &-right {
+            right: -5%;
+            left: auto;
+            @include tablets {
+                right: 5%;
+            }
+            img {
+                transform: rotate(-90deg);
+                position: absolute;
+            }
         }
-      }
-      &-right {
-        right: -5%;
-        left: auto;
-        @include tablets {
-            right: 5%;
-        }
-        img {
-          transform: rotate(-90deg);
-          position: absolute;
-        }
-      }
     }
 }
 
@@ -115,6 +114,9 @@
     @include tablets {
         left: -30%;
         top: 4%;
+    }
+    @include phones {
+        left: -35%
     }
     &:hover {
         .composition__drop {
@@ -177,7 +179,10 @@
     text-align: center;
     @include tablets {
         left: 80%;
-        bottom: 87%;
+        bottom: 86%;
+    }
+    @include phones {
+        left: 85%;
     }
     &__img {
         background-position: center;

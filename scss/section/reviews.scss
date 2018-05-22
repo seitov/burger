@@ -18,11 +18,10 @@
         &:hover {
             .reviews {
                 &__img {
-                    filter: grayscale(100%) brightness(50%);   
+                    filter: grayscale(100%) brightness(50%);
                 }
                 &__info {
                     display: block;
-                    
                 }
             }
         }
@@ -60,6 +59,9 @@
         @include tablets {
             margin-bottom: rem(20px);
         }
+        @include phones {
+            font-size: rem(30px);
+        }
     }
     &__text {
         font-weight: 300;
@@ -69,6 +71,9 @@
         overflow: hidden;
         @include tablets {
             margin-bottom: rem(20px);
+        }
+        @include phones {
+            display: none;
         }
     }
     &__btn {
