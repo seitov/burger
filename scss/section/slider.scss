@@ -20,6 +20,9 @@
     @include tablets {
         justify-content: center;
     }
+    @include phones {
+        padding: rem(50px) 0;
+    }
     &__list {
         position: relative;
         height: 100%;

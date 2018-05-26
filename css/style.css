@@ -462,6 +462,9 @@ img {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media (max-width: 480px) {
+    .slider {
+      padding: 3.125rem 0; } }
   .slider__list {
     position: relative;
     height: 100%;
