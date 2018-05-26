@@ -10,18 +10,18 @@ let currentRight = 0;
 
 list.style.right = currentRight;
 
-right.addEventListener("click", function(e) {
+right.addEventListener("click", function (e) {
 	e.preventDefault();
-  if (currentRight < maxRight) {
-    currentRight += step;
-    list.style.right = currentRight + "%";
-  }
+	if (currentRight < maxRight) {
+		currentRight += step;
+		list.style.right = currentRight + "%";
+	}
 });
 
-left.addEventListener("click", function(e) {
+left.addEventListener("click", function (e) {
 	e.preventDefault();
-  if (currentRight > minRight) {
-    currentRight -= step;
-    list.style.right = currentRight + "%";
-  }
+	if (currentRight > minRight) {
+		currentRight -= step;
+		list.style.right = currentRight + "%";
+	}
 });

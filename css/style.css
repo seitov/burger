@@ -758,7 +758,13 @@ img {
   text-transform: uppercase;
   font-family: 'Gagalin';
   font-size: 0.875rem;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .accordeon__trigger:hover {
+    color: #f8b43a; }
   @media (max-width: 768px) {
     .accordeon__trigger {
       -webkit-box-pack: center;

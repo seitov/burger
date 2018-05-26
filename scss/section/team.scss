@@ -75,6 +75,11 @@
 	font-family: 'Gagalin';
 	font-size: rem(14px);
 	margin-bottom: rem(10px);
+	cursor: pointer;
+	transition: .3s;
+	&:hover {
+		color: $yellow;
+	}
 	@include tablets {
 		justify-content: center;
 	}
