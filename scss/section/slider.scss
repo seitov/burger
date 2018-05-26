@@ -123,7 +123,7 @@
         top: 4%;
     }
     @include phones {
-        left: -35%
+        left: -25%
     }
     &:hover {
         .composition__drop {
@@ -186,10 +186,10 @@
     text-align: center;
     @include tablets {
         left: 80%;
-        bottom: 86%;
+        bottom: 83%;
     }
     @include phones {
-        left: 85%;
+        left: 75%;
     }
     &__img {
         background-position: center;

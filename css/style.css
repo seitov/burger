@@ -589,7 +589,7 @@ img {
       top: 4%; } }
   @media (max-width: 480px) {
     .composition {
-      left: -35%; } }
+      left: -25%; } }
   .composition:hover .composition__drop {
     top: 0;
     opacity: 1; }
@@ -659,10 +659,10 @@ img {
   @media (max-width: 768px) {
     .kkal {
       left: 80%;
-      bottom: 86%; } }
+      bottom: 83%; } }
   @media (max-width: 480px) {
     .kkal {
-      left: 85%; } }
+      left: 75%; } }
   .kkal__img {
     background-position: center;
     background-repeat: no-repeat;
@@ -862,7 +862,8 @@ img {
     background-size: cover;
     background-color: rgba(47, 50, 52, 0.6);
     height: 100%;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
     .menu__accardeon-element .menu__accardeon-trigger .trigger__title {
       font-family: 'Gagalin';
       font-size: 2.5rem;
