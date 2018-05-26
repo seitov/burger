@@ -450,6 +450,9 @@ img {
   padding: 0;
   line-height: 0.9;
   margin-bottom: 1.5625rem; }
+  @media (max-width: 480px) {
+    .slider__section-head {
+      margin-bottom: 1.25rem; } }
 
 .slider {
   height: 100%;
@@ -531,6 +534,9 @@ img {
   .slider__text {
     font-size: 0.875rem;
     margin-bottom: 1.5625rem; }
+    @media (max-width: 480px) {
+      .slider__text {
+        margin-bottom: 1.25rem; } }
   .slider__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,8 +845,8 @@ img {
   left: 5.625rem; }
   @media (max-width: 480px) {
     .menu__section-head {
-      padding-top: 3.75rem;
-      left: 3.75rem; } }
+      padding-top: 3.125rem;
+      left: 3.125rem; } }
 
 .menu__container {
   position: absolute;
@@ -946,7 +952,9 @@ img {
     -webkit-filter: grayscale(100%) brightness(50%);
     filter: grayscale(100%) brightness(50%); }
   .reviews__element:hover .reviews__info {
-    display: block; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .reviews__img {
   position: absolute;
@@ -975,8 +983,15 @@ img {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       text-align: center;
-      padding: 35px 50px; } }
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .reviews__name {
   font-family: 'Gagalin';

@@ -9,6 +9,9 @@
     padding: 0;
     line-height: 0.9;
     margin-bottom: rem(25px);
+    @include phones {
+        margin-bottom: rem(20px);
+    } 
 }
 
 .slider {
@@ -66,6 +69,9 @@
     &__text {
         font-size: rem(14px);
         margin-bottom: rem(25px);
+        @include phones {
+            margin-bottom: rem(20px);
+        } 
     }
     &__info {
         display: flex;
