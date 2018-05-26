@@ -10,6 +10,10 @@
 .menu__section-head {
 	position: absolute;
 	left: rem(90px);
+	@include phones {
+		padding-top: rem(60px);
+		left: rem(60px);
+	}
 }
 
 .menu__container {
