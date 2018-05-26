@@ -459,8 +459,6 @@ img {
   overflow: hidden; }
   @media (max-width: 768px) {
     .slider {
-      height: 100%;
-      padding: 3.125rem;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
