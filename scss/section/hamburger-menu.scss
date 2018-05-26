@@ -1,0 +1,50 @@
+.hamburger-nav--active {
+    @include tablets {
+        display: flex;
+    }
+}
+
+.hamburger-nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(47, 50, 52, 0.98);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    &__list {
+        text-align: center;
+    }
+    &__elem {
+        line-height: 4.625rem;
+        &:after {
+            display: block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 2.5px;
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &:last-child:after {
+            display: none;
+        }
+    }
+    &__elem-link {
+        color: #fff;
+        font-size: rem(27px);
+    }
+    &__logo {
+        position: absolute;
+        top: 1%;
+        left: rem(20px);
+    }
+    &__btn-close {
+        position: absolute;
+        top: 6%;
+        right: 5%;
+    }
+}

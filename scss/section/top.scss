@@ -18,6 +18,10 @@
     margin-right: auto;
 }
 
+.logo__img {
+    z-index: 100;
+}
+
 .header__menu {
     @include tablets {
         display: none;
