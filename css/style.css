@@ -844,6 +844,7 @@ img {
 
 .menu__section-head {
   position: absolute;
+  top: 0;
   left: 5.625rem; }
   @media (max-width: 480px) {
     .menu__section-head {
@@ -1249,9 +1250,9 @@ img {
   height: 3.75rem;
   position: absolute;
   z-index: 25;
-  top: 100%;
   left: 0;
-  right: 0; }
+  right: 0;
+  bottom: 0; }
   @media (max-width: 480px) {
     .footer {
       height: 8.625rem; } }

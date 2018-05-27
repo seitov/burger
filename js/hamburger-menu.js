@@ -4,11 +4,10 @@ const overlay = createOverlay(template);
 
 openButton.addEventListener("click", function() {
   overlay.open();
-  overlay.setContent(contentElement);
 });
 
 function createOverlay(template) {
-  let fragment = document.createElement('div');
+  let fragment = document.createElement('nav');
 
   fragment.innerHTML = template;
 
@@ -33,6 +32,7 @@ function createOverlay(template) {
     },
     close() {
       closeElement.click();
+      contentElement.click();
     },
     setContent(content) {
       contentElement.innerHTML = content;

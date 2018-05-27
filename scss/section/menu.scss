@@ -9,6 +9,7 @@
 
 .menu__section-head {
 	position: absolute;
+	top: 0;
 	left: rem(90px);
 	@include phones {
 		padding-top: rem(50px);
