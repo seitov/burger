@@ -21,7 +21,10 @@
                     filter: grayscale(100%) brightness(50%);
                 }
                 &__info {
-                    display: flex;
+                    display: block;
+                    @include tablets {
+                        display: flex;
+                    }
                 }
             }
         }
@@ -40,6 +43,7 @@
     }
     &__info {
         position: relative;
+        flex-direction: column;
         padding: 45px 20px;
         color: #fff;
         display: none;

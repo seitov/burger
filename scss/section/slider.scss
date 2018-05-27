@@ -179,6 +179,7 @@
         transition: opacity .4s;
     }
     &__table {
+        z-index: 100;
         td {
             padding: 0 rem(10px);
             white-space: nowrap;

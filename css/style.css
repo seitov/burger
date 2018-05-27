@@ -651,9 +651,11 @@ img {
     -webkit-transition: opacity .4s;
     -o-transition: opacity .4s;
     transition: opacity .4s; }
-  .composition__table td {
-    padding: 0 0.625rem;
-    white-space: nowrap; }
+  .composition__table {
+    z-index: 100; }
+    .composition__table td {
+      padding: 0 0.625rem;
+      white-space: nowrap; }
 
 .kkal {
   position: absolute;
@@ -952,9 +954,12 @@ img {
     -webkit-filter: grayscale(100%) brightness(50%);
     filter: grayscale(100%) brightness(50%); }
   .reviews__element:hover .reviews__info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: block; }
+    @media (max-width: 768px) {
+      .reviews__element:hover .reviews__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
 
 .reviews__img {
   position: absolute;
@@ -973,6 +978,10 @@ img {
 
 .reviews__info {
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 45px 20px;
   color: #fff;
   display: none;
@@ -1322,7 +1331,8 @@ img {
     display: flex; } }
 
 .hamburger-nav {
-  display: none;
+  z-index: 100;
+  overflow: hidden;
   position: fixed;
   height: 100vh;
   width: 100vw;
