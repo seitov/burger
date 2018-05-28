@@ -137,6 +137,9 @@
         justify-content: flex-start;
         align-items: center;
     }
+    @include phones {
+        height: 0;
+    }
 }
 
 .top__description-head {
@@ -151,8 +154,11 @@
     color: #fff;
     line-height: 1;
     @include tablets {
-        justify-content: center;
+        text-align: center;
         width: 50%;
+    }
+    @include phones {
+        font-size: rem(55px);
     }
 }
 

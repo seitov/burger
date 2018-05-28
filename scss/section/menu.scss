@@ -13,7 +13,7 @@
 	left: rem(90px);
 	@include phones {
 		padding-top: rem(50px);
-		left: rem(50px);
+		left: rem(40px);
 	}
 }
 
@@ -47,6 +47,9 @@
 		height: 100%;	
 		position: relative;
 		cursor: pointer;
+		@include phones {
+			width: rem(65px);
+		}
 		.trigger__title {
 			font-family: 'Gagalin';
 			font-size: rem(40px);
@@ -60,6 +63,9 @@
 			transform-origin: left top;
 			white-space: nowrap;
 			transition: .4s;
+			@include phones {
+				font-size: rem(35px);
+			}
 		}
 		&:hover {
 			.trigger__title {
@@ -92,6 +98,10 @@
 		}
 		@include tablets {
 			width: calc(100% - 65px);
+		}
+		@include phones {
+			width: calc(100% - 52.81px);
+			padding: rem(40px) rem(25px);
 		}
 	}
 }

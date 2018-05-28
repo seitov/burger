@@ -45,6 +45,10 @@
         justify-content: center;
         width: 50%;
         height: 100%;
+        @include phones {
+            height: 50%;
+            padding-top: rem(25px);
+        }
     }
     &__address-text {
         margin-bottom: rem(5px);
@@ -64,6 +68,7 @@
         height: 100%;
         @include phones {
             align-items: center;
+            height: 50%;
         }
     }
 }

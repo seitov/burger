@@ -42,10 +42,16 @@
         position: absolute;
         top: 1%;
         left: rem(20px);
+        @include phones {
+            left: rem(10px);
+        }
     }
     &__btn-close {
         position: absolute;
-        top: 6%;
-        right: 5%;
+        top: 4%;
+        right: 3%;
+        @include phones {
+            top: 6%;
+        }
     }
 }

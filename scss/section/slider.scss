@@ -7,8 +7,11 @@
 
 .slider__section-head {
     padding: 0;
-    line-height: 0.9;
+    line-height: 1;
     margin-bottom: rem(25px);
+    @include tablets {
+        width: 70%;
+    }
     @include phones {
         margin-bottom: rem(20px);
     } 
@@ -24,7 +27,7 @@
         justify-content: center;
     }
     @include phones {
-        padding: rem(50px) 0;
+        padding: rem(40px) 0;
     }
     &__list {
         position: relative;
@@ -54,9 +57,11 @@
         @include tablets {
             width: 70%;
             height: 50%;
-            justify-content: flex-start;
             align-items: center;
             text-align: center;
+        }
+        @include phones {
+            width: 100%;
         }
     }
     &__img {
@@ -137,7 +142,9 @@
         top: 4%;
     }
     @include phones {
-        left: -25%
+        left: 0;
+        top: 0;
+        position: absolute;
     }
     &:hover {
         .composition__drop {
@@ -177,6 +184,7 @@
         top: rem(-3333px);
         opacity: 0;
         transition: opacity .4s;
+        z-index: 100;
     }
     &__table {
         z-index: 100;
@@ -204,7 +212,8 @@
         bottom: 83%;
     }
     @include phones {
-        left: 75%;
+        left: 80%;
+        top: 0;
     }
     &__img {
         background-position: center;
