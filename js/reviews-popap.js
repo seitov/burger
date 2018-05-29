@@ -1,27 +1,43 @@
-//Показываем модальное окно
-$('.reviews__btn').each(function(i){
-  return this[i];
- }).click(function(e){
-   //считываем атрибут data-modal
-   var modal = $(this).data('modal');
-   $('#'+modal).show();
- })
+const popapOpen = document.querySelector(".reviews__btn");
+const popap = document.querySelector("#reviewsPopap").innerHTML;
+const popapOverlay = createOverlay(popap);
 
- //Закрываем модальное окно крестиком
- $('.modal__close')
-   .each(function(i){
-     return this[i];
-   })
-   .click(function(){
-     $(this).parents('.modal').hide();
-   })
+popapOpen.addEventListener("click", function() {
+  popapOverlay.open();
+  popapOverlay.setContent(contentElement);
+});
 
-//Закрываем модальное окно кликом по пустому месту
-$('.modal')
- .each(function(i){
-   return this[i];
- }).click(function(e){
-   if(e.target.className === 'modal'){
-     $(this).hide();
-   }
- })
+function createOverlay(popap) {
+  let fragment = document.createElement('div');
+
+  fragment.innerHTML = popap;
+
+  const overlayElement = fragment.querySelector(".popapContainer");
+  const contentElement = fragment.querySelector(".popapContent");
+  const closeElement = fragment.querySelector(".popapClose");
+  
+  fragment = null;
+
+  overlayElement.addEventListener("click", e => {
+    if (e.target === overlayElement) {
+      closeElement.click();
+    }
+  });
+  closeElement.addEventListener("click", () => {
+    document.body.removeChild(overlayElement);
+  });
+
+  return {
+    open() {
+      document.body.appendChild(overlayElement);
+    },
+    close() {
+      closeElement.click();
+    },
+    setContent(content) {
+      contentElement.innerHTML = content;
+    }
+  };
+}
+
+// попап 2
