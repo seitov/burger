@@ -17,7 +17,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent" id="fullpage">
-            <section class="section top" data-anchor="section-top">
+            <section class="section top section-top" data-anchor="section-top">
                 <div class="container top__container">
                     <header class="header__block">
                         <div class="header__logo">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section best" data-anchor="section-best">
+            <section class="section best section-best" data-anchor="section-best">
                 <div class="container">
                     <h2 class="section__head best__head">Мы лучшие</h2>
                     <div class="best__content">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section slider__section" data-anchor="section-slider">
+            <section class="section slider__section section-slider" data-anchor="section-slider">
                 <div class="container">
                     <a href="#" id="left" class="slider__arrow slider__arrow-left">
                         <img src="img/slider/arrow-scroll.svg" alt="arrow">
@@ -3302,7 +3302,7 @@
                     </a>
                 </div>
             </section>
-            <section class="section team__section" data-anchor="section-team">
+            <section class="section team__section section-team" data-anchor="section-team">
                 <div class="team__container">
                     <div class="team__wrap">
                         <h2 class="section__head team__head">Команда</h2>
@@ -3359,7 +3359,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section menu__section" data-anchor="section-menu">
+            <section class="section menu__section section-menu" data-anchor="section-menu">
                 <h2 class="section__head menu__section-head">Меню</h2>
                 <div class="menu__container">
                     <ul class="menu__accardeon">
@@ -3499,62 +3499,64 @@
                         </div>
                     </li>
                 </ul>
+                <script type="teamplate" id="reviewsPopap">
+                </script>
             </section>
             <section class="section form__section" data-anchor="section-form">
                 <div class="container">
                     <h2 class="section__head form__section-head">Закажите доставку</h2>
-                    <form action="server.php" method="POST" class="form">
+                    <form action="server.php" method="POST" class="form" id="order-form">
                         <div class="form__separation">
                             <div class="form__row">
-                                <label class="form__block">
+                                <label for="user-name" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-name" name="user-name" type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label for="user-phone" class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-phone" name="user-phone" type="text" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
-                                <label class="form__block">
+                                <label for="user-street" class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-street" name="user-street" type="text" class="form__input">
                                 </label>
                             </div>
                             <div class="form__row">
-                                <label class="form__block">
+                                <label for="user-house" class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-house" name="user-house" type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label for="user-korpus" class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-korpus" name="user-korpus" type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label for="user-apartment" class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-apartment" name="user-apartment" type="text" class="form__input">
                                 </label>
-                                <label class="form__block">
+                                <label for="user-floor" class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input id="user-floor" name="user-floor" type="text" class="form__input">
                                 </label>
                             </div>
                         </div>
                         <div class="form__separation">
-                            <div class="form__row form__row-right">
+                            <label for="user-text" class="form__row form__row-right">
                                 <div class="form__title">Комментарий</div>
-                                <textarea name="comment" class="form__textarea"></textarea>
-                            </div>
+                                <textarea id="user-text" name="user-text" class="form__textarea"></textarea>
+                            </label>
                             <div class="form__row">
-                                <label class="form__radio">
-                                    <input type="radio" name="radio" class="form__radio-input">
+                                <label for="odd-mooney" class="form__radio">
+                                    <input id="odd-mooney" type="radio" name="pay" class="form__radio-input" value="Наличными">
                                     <div class="form__radio-text">
                                         <div class="form__radio-btn"></div>
                                         Потребуется сдача
                                     </div>
                                 </label>
-                                <label class="form__radio">
-                                    <input type="radio" name="radio" class="form__radio-input" checked>
+                                <label for="pay" class="form__radio">
+                                    <input id="pay" type="radio" name="pay" class="form__radio-input" checked value="Картой">
                                     <div class="form__radio-text">
                                         <div class="form__radio-btn"></div>
                                         Оплата по карте
@@ -3562,8 +3564,8 @@
                                 </label>
                             </div>
                             <div class="form__row">
-                                <label class="form__checkbox">
-                                    <input type="checkbox" class="form__checkbox-input">
+                                <label for="call" class="form__checkbox">
+                                    <input id="call" type="checkbox" name="call" class="form__checkbox-input" value="1">
                                     <div class="form__checkbox-text">
                                         <div class="form__checkbox-btn"></div>
                                         Не перезванивать
@@ -3584,7 +3586,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section contact__section" data-anchor="section-contact">
+            <section class="section contact__section section-contact" data-anchor="section-contact">
                 <div class="map" id="map"></div>
                 <footer class="footer">
                     <div class="container footer__container">
@@ -3701,12 +3703,12 @@
                 <img src="img/hamburger-menu/btn-close.svg" alt="X"></img>
             </a>
             <div class="hamburger-nav__logo">
-                    <img src="img/hero/logo.svg" alt="Logo"></img>
+                <img src="img/hero/logo.svg" alt="Logo"></img>
             </div>
         </nav>
     </script>
     <ul class="fixed-menu" id="fixed-menu">
-        <li class="fixed-menu__item active" data-menuanchor="section-top">
+        <li class="active fixed-menu__item" data-menuanchor="section-top">
             <a class="fixed-menu__link" href="#section-top" data-scroll-to="0"></a>
         </li>
         <li class="fixed-menu__item" data-menuanchor="section-best">
@@ -3733,11 +3735,13 @@
     </ul>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.fullpage.js"></script>
 <script src="js/hamburger-menu.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/accordeon.js"></script>
 <script src="js/map.js" type="text/javascript"></script>
 <script src="js/fullpage.js"></script>
-<script src="js/jquery.fullpage.js"></script>
+<script src="js/form.js"></script>
+<script src="js/reviews-popap.js"></script>
 
 </html>

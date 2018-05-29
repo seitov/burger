@@ -32,7 +32,6 @@ function createOverlay(template) {
     },
     close() {
       closeElement.click();
-      contentElement.click();
     },
     setContent(content) {
       contentElement.innerHTML = content;

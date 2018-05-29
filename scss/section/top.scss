@@ -159,6 +159,7 @@
     }
     @include phones {
         font-size: rem(55px);
+        width: 100%;
     }
 }
 

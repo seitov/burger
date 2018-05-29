@@ -343,7 +343,8 @@ img {
       width: 50%; } }
   @media (max-width: 480px) {
     .top__description-text {
-      font-size: 3.4375rem; } }
+      font-size: 3.4375rem;
+      width: 100%; } }
 
 .arrow-scroll {
   position: absolute;
