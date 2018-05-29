@@ -1476,19 +1476,22 @@ img {
   height: 100%;
   background: rgba(47, 50, 52, 0.98);
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.popapContainer_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .popapContent {
   background: #fff;
